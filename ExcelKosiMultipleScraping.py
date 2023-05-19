@@ -56,6 +56,7 @@ f. write(f'Sheet: %s \n' %(fileSheet))
 dt_string = datetime.now().strftime("%d/%m/%Y %H:%M")
 f. write(f'Data and time of search: %s \n' %(dt_string))
 f. write(f'Looking for phrases: ' + ', '.join(wordToCheck) + '\n\n')
+
 # Scraping file with list
 for x in wordToCheck:
     i = 0
