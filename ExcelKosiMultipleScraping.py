@@ -4,6 +4,7 @@
 
 import openpyxl
 from openpyxl.utils import get_column_letter
+from datetime import datetime
 
 # Welcome instruction
 print(f'KosiExcel program for searching multiple phrases in Excel files at once.'
@@ -52,6 +53,8 @@ print('')
 f = open(fileName + 'ExcelScraping.txt', 'w', encoding="utf-8")
 f. write(f'I am checking the file: %s \n' %(fileName))
 f. write(f'Sheet: %s \n' %(fileSheet))
+dt_string = datetime.now().strftime("%d/%m/%Y %H:%M")
+f. write(f'Data and time of search: %s \n' %(dt_string))
 f. write(f'Looking for phrases: ' + ', '.join(wordToCheck) + '\n\n')
 # Scraping file with list
 for x in wordToCheck:
