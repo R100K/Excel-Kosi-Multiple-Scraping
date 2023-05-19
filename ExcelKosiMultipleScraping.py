@@ -1,12 +1,12 @@
 #! python3
-# ExcelKosi.py - Tool to automate boring tasks in Excel files
+# ExcelKosiMultipleScraping.py - Tool designed for searching multiple phrases in Excel files at once. It saves time and reduces strain on your wrists.
 # Author - Robert Stokłosa
 
 import openpyxl
 from openpyxl.utils import get_column_letter
 
 # Welcome instruction
-print(f'KosiExcel program for scraping Excel files.'
+print(f'KosiExcel program for searching multiple phrases in Excel files at once.'
       '\nPlace the Excel file to be checked in the folder where this program is located.\n')
 
 # Opening Excel file
